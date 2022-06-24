@@ -1,0 +1,7 @@
+*.txt
+*.sql
+.env
+
+data/
+node_modules/
+mysql/my-db/
