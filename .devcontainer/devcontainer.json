@@ -16,13 +16,22 @@
 		"vscode": {
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"dbaeumer.vscode-eslint"
+				"dbaeumer.vscode-eslint",
+				"formulahendry.auto-rename-tag",
+				"formulahendry.auto-close-tag",
+				"donjayamanne.git-extension-pack",
+				"coenraads.bracket-pair-colorizer",
+				"abusaidm.html-snippets",
+				"piyushvscode.nodejs-snippets",
+				"vscode-icons-team.vscode-icons",
+				"esbenp.prettier-vscode",
+				"cweijan.vscode-mysql-client2"
 			]
 		}
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [3000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
