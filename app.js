@@ -7,6 +7,7 @@ const path = require("path");
 //const adminRoutes = require("./routes/admin.js");
 //const shopRoutes = require("./routes/shop.js");
 const errorController = require("./controllers/error");
+const pbsRoutes = require("./routes/pbs");
 
 //Express starten
 const app = express();
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, "public")));
 //Funktionen benutzen
 //app.use(adminRoutes.routes);
 //app.use(shopRoutes);
+app.use(pbsRoutes);
 
 /*app.get("/", (req, res, next)=>{
   console.log("test");
