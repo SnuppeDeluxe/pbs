@@ -20,10 +20,15 @@ app.use(express.static(path.join(__dirname, "public")));
 //app.use(adminRoutes.routes);
 //app.use(shopRoutes);
 
-//Page not found
-app.use("/", (req, res, next) => {
-  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+app.get("/", (req, res, next)=>{
+  console.log("test");
+  res.status(500);
 });
+
+//Page not found
+/*app.use("/", (req, res, next) => {
+  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+});*/
 
 //Port öffnen
 app.listen(3000); //Erstellt den Server und öffnet den Port
