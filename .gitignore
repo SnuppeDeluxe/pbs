@@ -1,6 +1,7 @@
 *.txt
 *.sql
 .env
+core
 
 data/
 node_modules/
